@@ -1,0 +1,142 @@
+<div id="cabeca">
+    <div style="background: rgb(164, 197, 166);"></div>
+    <div style="background: rgb(62, 176, 52);"></div>
+    <div style="background: rgb(71, 176, 57);"></div>
+    <div style="background: rgb(155, 196, 166);"></div>
+    <div style="background: rgb(197, 203, 203);"></div>
+    <div style="background: rgb(135, 190, 122);"></div>
+    <div style="background: rgb(126, 187, 118);"></div>
+    <div style="background: rgb(77, 153, 87);"></div>
+    <div style="background: rgb(47, 160, 56);"></div>
+    <div style="background: rgb(99, 181, 96);"></div>
+    <div style="background: rgb(66, 177, 49);"></div>
+    <div style="background: rgb(113, 186, 107);"></div>
+    <div style="background: rgb(73, 153, 82);"></div>
+    <div style="background: rgb(111, 182, 88);"></div>
+    <div style="background: rgb(102, 183, 91);"></div>
+    <div style="background: rgb(197, 203, 203);"></div>
+    <div style="background: rgb(80, 178, 39);"></div>
+    <div style="background: rgb(41, 98, 43);"></div>
+    <div style="background: rgb(52, 97, 56);"></div>
+    <div style="background: rgb(148, 196, 146);"></div>
+    <div style="background: rgb(85, 159, 98);"></div>
+    <div style="background: rgb(39, 91, 42);"></div>
+    <div style="background: rgb(52, 97, 56);"></div>
+    <div style="background: rgb(202, 208, 206);"></div>
+    <div style="background: rgb(81, 177, 42);"></div>
+    <div style="background: rgb(39, 91, 43);"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(105, 181, 81);"></div>
+    <div style="background: rgb(68, 177, 52);"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(27, 68, 38);"></div>
+    <div style="background: rgb(123, 185, 108);"></div>
+    <div style="background: rgb(137, 192, 137);"></div>
+    <div style="background: rgb(102, 182, 97);"></div>
+    <div style="background: rgb(149, 194, 151);"></div>
+    <div style="background: rgb(41, 94, 42);"></div>
+    <div style="background: rgb(38, 90,42 );"></div>
+    <div style="background: rgb(184, 202, 190);"></div>
+    <div style="background: rgb(69, 146, 76);"></div>
+    <div style="background: rgb(93, 180, 65);"></div>
+    <div style="background: rgb(159, 200, 160);"></div>
+    <div style="background: rgb(77, 156, 90);"></div>
+    <div style="background: rgb(52, 97, 56);"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(41, 98, 43);"></div>
+    <div style="background: rgb(105, 182, 80);"></div>
+    <div style="background: rgb(184, 202, 190);"></div>
+    <div style="background: rgb(184, 208, 184);"></div>
+    <div style="background: rgb(104, 168, 116);"></div>
+    <div style="background: rgb(26, 28,41 );"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(26, 28, 41);"></div>
+    <div style="background: rgb(90, 180, 82);"></div>
+    <div style="background: rgb(79, 161, 89);"></div>
+    <div style="background: rgb(105, 182, 80);"></div>
+    <div style="background: rgb(132, 189, 116);"></div>
+    <div style="background: rgb(27, 68, 38);"></div>
+    <div style="background: rgb(148, 195, 143);"></div>
+    <div style="background: rgb(170, 200,174 );"></div>
+    <div style="background: rgb(40, 87, 41);"></div>
+    <div style="background: rgb(49, 149, 51);"></div>
+    <div style="background: rgb(103, 183, 86);"></div>
+    <div id="overlay"></div>
+
+
+</div>
+
+
+<style>
+    #cabeca {
+        width: 400px;
+        height: 400px;
+        background: rgb(255, 255, 255);
+        margin: 100px auto;
+        font-size: 0px;
+        position: relative;
+
+    }
+
+    #cabeca div {
+        width: 12.5%;
+        height: 12.5%;
+        display: inline-block;
+
+    }
+
+    #cabeca:hover {
+        animation: scale 0.75s forwards;
+
+    }
+
+    #overlay {
+        width: 100% !important;
+        height: 100% !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: 0.5s all linear;
+        cursor: pointer;
+
+    }
+
+    #overlay:hover {
+        animation: blink 0.75s forwards;
+    }
+
+    @keyframes blink {
+        0% {
+            background-color: transparent;
+        }
+
+        25% {
+            background-color: transparent;
+        }
+
+        50% {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        75% {
+            background-color: transparent;
+        }
+
+        100% {
+            background-color: white;
+        }
+    }
+    @keyframes scale {
+        75% {
+            transform: scale(1.2);
+        }
+        99% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
+</style>
